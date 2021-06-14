@@ -1,9 +1,9 @@
-version: "3.8"
+version: "3"
 
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: bash -c "python manage.py migrate && python manage.py loaddata initial_fixtures.json && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/code
     ports:
