@@ -1,0 +1,229 @@
+[
+{
+  "model": "questions.quiz",
+  "pk": 1,
+  "fields": {
+    "title": "Python Quiz"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 1,
+  "fields": {
+    "text": "Кто автор языка Python?",
+    "quiz": 1
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 2,
+  "fields": {
+    "text": "Год создания языка Python?",
+    "quiz": 1
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 3,
+  "fields": {
+    "text": "Укажите вид типизации в языке Python",
+    "quiz": 1
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 4,
+  "fields": {
+    "text": "Укажите неизменяемые типы данных в языке Python",
+    "quiz": 1
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 5,
+  "fields": {
+    "text": "Укажите интерпретируемые языки программирования",
+    "quiz": 1
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 1,
+  "fields": {
+    "text": "Ларри Уолл",
+    "is_correct": false,
+    "question": 1
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 2,
+  "fields": {
+    "text": "Гвидо ван Россум",
+    "is_correct": true,
+    "question": 1
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 3,
+  "fields": {
+    "text": "Деннис Ритчи",
+    "is_correct": false,
+    "question": 1
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 4,
+  "fields": {
+    "text": "Андреас Румпф",
+    "is_correct": false,
+    "question": 1
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 5,
+  "fields": {
+    "text": "1991",
+    "is_correct": true,
+    "question": 2
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 6,
+  "fields": {
+    "text": "1987",
+    "is_correct": false,
+    "question": 2
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 7,
+  "fields": {
+    "text": "1972",
+    "is_correct": false,
+    "question": 2
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 8,
+  "fields": {
+    "text": "2004",
+    "is_correct": false,
+    "question": 2
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 9,
+  "fields": {
+    "text": "Динамическая сильная",
+    "is_correct": true,
+    "question": 3
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 10,
+  "fields": {
+    "text": "Динамическая слабая",
+    "is_correct": false,
+    "question": 3
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 11,
+  "fields": {
+    "text": "Статическая сильная",
+    "is_correct": false,
+    "question": 3
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 12,
+  "fields": {
+    "text": "Статическая слабая",
+    "is_correct": false,
+    "question": 3
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 13,
+  "fields": {
+    "text": "Словари",
+    "is_correct": false,
+    "question": 4
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 14,
+  "fields": {
+    "text": "Списки",
+    "is_correct": false,
+    "question": 4
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 15,
+  "fields": {
+    "text": "Числа",
+    "is_correct": true,
+    "question": 4
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 16,
+  "fields": {
+    "text": "Кортежи",
+    "is_correct": true,
+    "question": 4
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 17,
+  "fields": {
+    "text": "Python",
+    "is_correct": true,
+    "question": 5
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 18,
+  "fields": {
+    "text": "C",
+    "is_correct": false,
+    "question": 5
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 19,
+  "fields": {
+    "text": "Perl",
+    "is_correct": true,
+    "question": 5
+  }
+},
+{
+  "model": "questions.choice",
+  "pk": 20,
+  "fields": {
+    "text": "Go",
+    "is_correct": false,
+    "question": 5
+  }
+}
+]

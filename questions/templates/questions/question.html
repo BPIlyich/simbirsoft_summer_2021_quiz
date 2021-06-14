@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}
+    {{ quiz.title }}
+{% endblock title %}
+
+{% block content %}
+    {% if question %}
+        <h1>{{ quiz.title }}</h1>
+        <h3>{{ question.text }}</h3>
+
+        <form action="" method="POST">{% csrf_token %}
+            <input type=hidden name="question_id" value="{{ question.uuid }}">
+
+            <div>
+                {% for answer in form.answers %}
+                    <li>{{ answer }}</li>
+                {% endfor %}
+            </div>
+
+            <input type="submit" value={{ is_last_step|yesno:"Завершить,Далее" }} class="btn">
+        </form>
+    {% endif %}
+
+    {% if previous_question_uri %}
+        <input type="button" onclick="location.href='{{ previous_question_uri }}';" value="Вернутся к прошлому вопросу"/>
+    {% endif %}
+{% endblock content %}

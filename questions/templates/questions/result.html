@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Результат викторины
+{% endblock title %}
+
+{% block content %}
+    {% if error %}
+        <h1>Возникла ошибка <small>{{ error }}</small></h1>
+    {% else %}
+        <h3>Ваше результат (от 0 до 1) - {{ result }}.</h3>
+    {% endif %}
+    <a href={% url 'quiz_list' %}>К выбору викторин</a>
+{% endblock content %}

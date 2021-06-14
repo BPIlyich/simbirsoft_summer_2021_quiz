@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Выбор викторины
+{% endblock title %}
+
+{% block content %}
+<h1>Выбор викторины</h1>
+    {% if object_list %}
+        <ul>
+            {% for quiz in object_list %}
+                <li><a href={% url 'quiz' quiz.id %}>{{ quiz.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Викторины не найдены.</p>
+    {% endif %}
+{% endblock content %}
