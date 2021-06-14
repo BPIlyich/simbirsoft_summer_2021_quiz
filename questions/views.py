@@ -66,12 +66,14 @@ class QuizFormView(FormView):
 
     def form_valid(self, form):
         self.request.POST = {}
-        guess = dict(form.data).get('answers', [])
+        guess = form.data.getlist('answers')
         answered_questions = self.request.session[self.quiz_dto.uuid]['answered_questions']
         answered_questions[self.question.uuid] = guess
         self.request.session[self.quiz_dto.uuid]['answered_questions'] = dict(
             answered_questions
         )
+        # TODO: без этой строки нормально не работает сохранение в сессию. Разобраться.
+        self.request.session['xxx'] = 'xxx'
         return super().form_valid(form)
 
     def get_success_url(self):
