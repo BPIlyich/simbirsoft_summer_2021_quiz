@@ -17,7 +17,7 @@ class QuestionForm(forms.Form):
             initial=selected_fields,
         )
 
-    # Рассчет результа викторины проводится в методе get_result
+    # Рассчет результата викторины проводится в методе get_result
     # класса quiz.services.QuizResultService
     def is_valid(self):
         return True
